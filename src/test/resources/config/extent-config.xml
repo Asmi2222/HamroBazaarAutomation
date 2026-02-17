@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        
+        <!-- Report Theme: standard or dark -->
+        <theme>dark</theme>
+        
+        <!-- Report Title -->
+        <documentTitle>HamroBazaar Test Report</documentTitle>
+        
+        <!-- Report Name -->
+        <reportName>Monitor Search Automation Report</reportName>
+        
+        <!-- Timestamp Format -->
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+        
+        <!-- Encoding -->
+        <encoding>UTF-8</encoding>
+        
+    </configuration>
+</extentreports>

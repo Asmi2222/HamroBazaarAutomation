@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-17T09:35:12 NPT" name="HamroBazaar Automation Test Suite" finished-at="2026-02-17T09:36:18 NPT" duration-ms="66547">
+    <groups>
+    </groups>
+    <test started-at="2026-02-17T09:35:12 NPT" name="HamroBazaar Complete End-to-End Test" finished-at="2026-02-17T09:36:18 NPT" duration-ms="66547">
+      <class name="com.hamrobazaar.tests.SearchResultsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-17T09:35:12 NPT" name="setUp" finished-at="2026-02-17T09:35:14 NPT" duration-ms="2089" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCompleteSearchFlowInOneSession()[pri:1, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-17T09:35:14 NPT" name="testCompleteSearchFlowInOneSession" description="Complete Search, Filter, Sort, Extract, and Save - All in One Session" finished-at="2026-02-17T09:36:18 NPT" duration-ms="64024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteSearchFlowInOneSession -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-17T09:36:18 NPT" name="tearDown" finished-at="2026-02-17T09:36:18 NPT" duration-ms="377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hamrobazaar.tests.SearchResultsTest -->
+    </test> <!-- HamroBazaar Complete End-to-End Test -->
+  </suite> <!-- HamroBazaar Automation Test Suite -->
+</testng-results>

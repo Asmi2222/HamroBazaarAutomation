@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="68.444" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\I1002567\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\target\test-classes;C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\target\classes;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\I1002567\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\I1002567\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\I1002567\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\I1002567\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\I1002567\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\I1002567\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\I1002567\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\I1002567\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\I1002567\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\I1002567\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\I1002567\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\I1002567\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\I1002567\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\I1002567\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\I1002567\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\I1002567\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\I1002567\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\I1002567\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\I1002567\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\I1002567\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\I1002567\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\I1002567\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\I1002567\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\I1002567\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\I1002567\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\I1002567\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\I1002567\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\I1002567\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\I1002567\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\I1002567\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\I1002567\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\I1002567\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\I1002567\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\I1002567\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\I1002567\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\I1002567\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\I1002567\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;C:\Users\I1002567\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\I1002567\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\I1002567\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\I1002567\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\I1002567\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\I1002567\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\I1002567\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\I1002567\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Katmandu"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+    <property name="sun.java.command" value="C:\Users\I1002567\AppData\Local\Temp\surefire5394444603883548307\surefirebooter-20260217093509989_3.jar C:\Users\I1002567\AppData\Local\Temp\surefire5394444603883548307 2026-02-17T09-35-09_224-jvmRun1 surefire-20260217093509989_1tmp surefire_0-20260217093509989_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\target\test-classes;C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\target\classes;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\I1002567\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\I1002567\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\I1002567\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\I1002567\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\I1002567\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\I1002567\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\I1002567\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\I1002567\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\I1002567\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\I1002567\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\I1002567\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\I1002567\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\I1002567\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\I1002567\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\I1002567\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\I1002567\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\I1002567\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\I1002567\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\I1002567\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\I1002567\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\I1002567\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\I1002567\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\I1002567\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\I1002567\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\I1002567\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\I1002567\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\I1002567\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\I1002567\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\I1002567\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\I1002567\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\I1002567\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\I1002567\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\I1002567\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\I1002567\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\I1002567\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\I1002567\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\I1002567\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\I1002567\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\I1002567\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\I1002567\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;C:\Users\I1002567\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\I1002567\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\I1002567\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\I1002567\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\I1002567\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\I1002567\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\I1002567\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\I1002567\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\I1002567\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\I1002567"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\I1002567\AppData\Local\Temp\surefire5394444603883548307\surefirebooter-20260217093509989_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.22+9-LTS-219"/>
+    <property name="user.name" value="I1002567"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\I1002567\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\I1002567\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.22"/>
+    <property name="user.dir" value="C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-11;C:\Users\I1002567\AppData\Local\Microsoft\WindowsApps;C:\SQLite;C:\Users\I1002567\AppData\Local\Programs\Git\cmd;C:\Program Files\Java\jdk-11\bin;C:\Users\I1002567\Tools\apache-maven-3.9.11\bin;C:\Users\I1002567\Tools\apache-jmeter-5.6.3\bin;C:\Users\I1002567\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.22+9-LTS-219"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testCompleteSearchFlowInOneSession" classname="com.hamrobazaar.tests.SearchResultsTest" time="64.184">
+    <system-out><![CDATA[[09:35:12] [INFO ] ExtentReportListener - ========================================
+[09:35:12] [INFO ] ExtentReportListener - Test Suite Started: HamroBazaar Complete End-to-End Test
+[09:35:12] [INFO ] ExtentReportListener - ========================================
+[09:35:12] [INFO ] BaseTest - ========================================
+[09:35:12] [INFO ] BaseTest - Setting up WebDriver for browser: chrome
+[09:35:12] [INFO ] BaseTest - ========================================
+[09:35:12] [INFO ] BaseTest - Initializing Chrome browser
+[09:35:14] [INFO ] DriverManager - WebDriver instance set for thread: 1
+[09:35:14] [INFO ] BaseTest - Browser window maximized
+[09:35:14] [INFO ] BaseTest - All cookies deleted
+[09:35:14] [INFO ] BaseTest - WebDriver setup completed successfully
+[09:35:14] [INFO ] ExtentReportListener - Test Started: testCompleteSearchFlowInOneSession
+[09:35:14] [INFO ] BaseTest - ========================================
+[09:35:14] [INFO ] BaseTest - Starting Complete End-to-End Test (Single Session)
+[09:35:14] [INFO ] BaseTest - ========================================
+[09:35:14] [INFO ] CSVReaderUtil - CSV Headers: ï»¿Test name , Search keyword, Location and distance , Distance from location
+[09:35:14] [INFO ] CSVReaderUtil - Successfully read 1 rows from CSV: src/test/resources/testdata/testdata.csv
+[09:35:14] [INFO ] BaseTest - Test Data - Keyword: monitor, Location: Naya Sadak, New Road, Kathmandu-22, Kathmandu, Distance: 10km
+[09:35:14] [INFO ] BaseTest - Navigating to URL: https://hamrobazaar.com/
+[09:35:17] [INFO ] BaseTest - Successfully navigated to: https://hamrobazaar.com/
+[09:35:17] [INFO ] BaseTest - Performing search with filters...
+[09:35:17] [INFO ] HomePage - HomePage initialized
+[09:35:17] [INFO ] HomePage - Searching for product: monitor
+[09:35:18] [INFO ] HomePage - Entered search keyword: monitor
+[09:35:18] [INFO ] HomePage - Pressed ENTER to trigger search
+[09:35:18] [INFO ] HomePage - Setting location: Naya Sadak, New Road, Kathmandu-22, Kathmandu
+[09:35:18] [INFO ] HomePage - Found location input using name attribute
+[09:35:18] [INFO ] BasePage - Scrolled to element (centered in viewport)
+[09:35:19] [ERROR] BasePage - Failed to click element: element click intercepted: Element <input id="_r_1t_-form-item" class="peer block w-full bg-transparent outline-none border-0 focus:placeholder:text-on-surface-dim-2 text-on-surface-sharp caret-accent-surface disabled:cursor-not-allowed paragraph-primary-regular placeholder:form-placeholder py-0.5 placeholder:text-transparent pt-3 pr-10 truncate text-base" placeholder=" " autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="_r_1u_-listbox" aria-autocomplete="list" aria-describedby="_r_1t_-form-item-description" aria-invalid="false" value="" name="location"> is not clickable at point (954, 573). Other element would receive the click: <button class="inline-flex py-0 items-center text-nowrap justify-center font-medium transition-colors focus-visible:outline-nonedisabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:shrink-0 [&amp;_svg]:h-6 [&amp;_svg]:w-6 h-9 px-2 gap-2 button-secondary min-w-[70px] rounded-lg bg-primary-surface text-primary-on-surface hover:bg-primary-hover-surface hover:text-primary-hover-on-surface active:bg-primary-active-surface active:text-primary-active-on-surface w-full" type="submit" disabled="">...</button>
+  (Session info: chrome=144.0.7559.135)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca6a8c7c0be683f0d4f16c131fd6e436, clickElement {id=f.468976A07DED58705D1BB78B10E256BB.d.1235FAB38011593759D61A604429B657.e.9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.135, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\I1002567\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53211}, goog:processID: 10860, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53211/devtoo..., se:cdpVersion: 144.0.7559.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ca6a8c7c0be683f0d4f16c131fd6e436)] -> name: location]
+Session ID: ca6a8c7c0be683f0d4f16c131fd6e436
+[09:35:19] [INFO ] BasePage - Clicked element using JavaScript
+[09:35:19] [INFO ] HomePage - Clicked on location input
+[09:35:19] [INFO ] HomePage - Cleared location input
+[09:35:20] [INFO ] HomePage - Typed location: Naya Sadak, New Road, Kathmandu-22, Kathmandu
+[09:35:20] [INFO ] HomePage - Selecting location from suggestions: Naya Sadak, New Road, Kathmandu-22, Kathmandu
+[09:35:20] [INFO ] HomePage - Found Naya Sadak suggestion using explicit wait
+[09:35:20] [INFO ] BasePage - Scrolled to element (centered in viewport)
+[09:35:20] [INFO ] BasePage - Clicked on element
+[09:35:20] [INFO ] HomePage - Clicked Naya Sadak suggestion using regular click
+[09:35:20] [INFO ] HomePage - Scrolling to distance section
+[09:35:20] [INFO ] BasePage - Scrolled to element (centered in viewport)
+[09:35:20] [INFO ] HomePage - Scrolled to distance section
+[09:35:20] [INFO ] HomePage - Setting distance: 10km
+[09:35:20] [INFO ] HomePage - Found 10km button using aria-label
+[09:35:20] [INFO ] HomePage - Scrolling to distance button
+[09:35:20] [INFO ] BasePage - Scrolled to element (centered in viewport)
+[09:35:22] [ERROR] BasePage - Failed to click element: element click intercepted: Element <button type="button" data-state="off" role="radio" aria-checked="false" class="gap-2 rounded-md hover:bg-muted hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-transparent h-9 min-w-9 relative flex w-full items-center justify-center font-medium select-none transition text-nowrap px-4 py-2 text-sm text-foreground before:pointer-events-none before:absolute before:top-1/2 before:-translate-y-1/2 before:right-0 before:h-4 before:w-px before:bg-border-dim-2 before:content-[''] last:before:hidden data-[state=on]:z-10 data-[state=on]:bg-transparent data-[state=on]:text-accent-surface data-[state=on]:border data-[state=on]:border-accent-surface data-[state=on]:rounded-lg disabled:opacity-60 disabled:cursor-not-allowed" aria-label="..." tabindex="-1" data-radix-collection-item="">10km</button> is not clickable at point (931, 573). Other element would receive the click: <button class="inline-flex py-0 items-center text-nowrap justify-center font-medium transition-colors focus-visible:outline-nonedisabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:shrink-0 [&amp;_svg]:h-6 [&amp;_svg]:w-6 h-9 px-2 gap-2 button-secondary min-w-[70px] rounded-lg bg-primary-surface text-primary-on-surface hover:bg-primary-hover-surface hover:text-primary-hover-on-surface active:bg-primary-active-surface active:text-primary-active-on-surface w-full" type="submit">...</button>
+  (Session info: chrome=144.0.7559.135)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca6a8c7c0be683f0d4f16c131fd6e436, clickElement {id=f.468976A07DED58705D1BB78B10E256BB.d.1235FAB38011593759D61A604429B657.e.24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.135, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\I1002567\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53211}, goog:processID: 10860, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53211/devtoo..., se:cdpVersion: 144.0.7559.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ca6a8c7c0be683f0d4f16c131fd6e436)] -> css selector: button[role='radio'][aria-label='10km']]
+Session ID: ca6a8c7c0be683f0d4f16c131fd6e436
+[09:35:22] [WARN ] HomePage - Regular click failed, using JavaScript
+[09:35:22] [INFO ] BasePage - Clicked element using JavaScript
+[09:35:22] [INFO ] HomePage - Clicked 10km button using JS click
+[09:35:22] [INFO ] HomePage - Distance set successfully: 10km
+[09:35:22] [INFO ] HomePage - Clicking apply filters button
+[09:35:22] [INFO ] HomePage - Found Apply button using text
+[09:35:22] [INFO ] BasePage - Scrolled to element (centered in viewport)
+[09:35:22] [INFO ] BasePage - Clicked on element
+[09:35:22] [INFO ] HomePage - Clicked apply button using regular click
+[09:35:22] [INFO ] HomePage - Filters applied successfully
+[09:35:22] [INFO ] BaseTest - Search with filters completed - Browser still open
+[09:35:22] [INFO ] SearchResultsPage - SearchResultsPage initialized
+[09:35:22] [INFO ] BaseTest - Search Results Page initialized - continuing in same session
+[09:35:22] [INFO ] BaseTest - Applying Low to High price sort...
+[09:35:22] [INFO ] SearchResultsPage - Applying Low to High sort
+[09:35:22] [INFO ] SearchResultsPage - Clicking sort dropdown button
+[09:35:32] [INFO ] SearchResultsPage - Found sort button using aria-label
+[09:35:32] [INFO ] BasePage - Scrolled to and highlighted element
+[09:35:32] [INFO ] BasePage - Clicked on element
+[09:35:32] [INFO ] SearchResultsPage - Sort dropdown opened
+[09:35:32] [INFO ] SearchResultsPage - Clicking Low to High option
+[09:35:43] [INFO ] BasePage - Scrolled to and highlighted element
+[09:35:43] [INFO ] BasePage - Clicked on element
+[09:35:53] [INFO ] SearchResultsPage - Sorted by Low to High
+[09:35:53] [INFO ] SearchResultsPage - Applied Low to High sort
+[09:35:53] [INFO ] BaseTest - Verifying price sort before extraction...
+[09:35:53] [INFO ] SearchResultsPage - ========================================
+[09:35:53] [INFO ] SearchResultsPage - PRICE SORT VERIFICATION STARTED
+[09:35:53] [INFO ] SearchResultsPage - ========================================
+[09:35:53] [INFO ] SearchResultsPage - Step 1: Found 13 price elements on page
+[09:35:53] [INFO ] SearchResultsPage - Step 1 Complete: Extracted 13 valid prices
+[09:35:53] [INFO ] SearchResultsPage - Step 2 Complete: Copied 13 prices to sortedPrices
+[09:35:53] [INFO ] SearchResultsPage - Step 3 Complete: Sorted copy in ascending order
+[09:35:53] [INFO ] SearchResultsPage - Step 4: Comparing originalPrices vs sortedPrices
+[09:35:53] [INFO ] SearchResultsPage - Index    | Original        | Expected(Sorted)  
+[09:35:53] [INFO ] SearchResultsPage - ---------------------------------------------
+[09:35:53] [INFO ] SearchResultsPage - 1        | Rs 1.0          | Rs 1.0             MATCH
+[09:35:53] [INFO ] SearchResultsPage - 2        | Rs 87.0         | Rs 87.0            MATCH
+[09:35:53] [INFO ] SearchResultsPage - 3        | Rs 199.0        | Rs 199.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 4        | Rs 339.0        | Rs 339.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 5        | Rs 500.0        | Rs 500.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 6        | Rs 500.0        | Rs 500.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 7        | Rs 600.0        | Rs 600.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 8        | Rs 799.0        | Rs 799.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 9        | Rs 799.0        | Rs 799.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 10       | Rs 799.0        | Rs 799.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 11       | Rs 799.0        | Rs 799.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 12       | Rs 800.0        | Rs 800.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - 13       | Rs 999.0        | Rs 999.0           MATCH
+[09:35:53] [INFO ] SearchResultsPage - ========================================
+[09:35:53] [INFO ] SearchResultsPage -  VERIFICATION PASSED - Prices ARE sorted Low to High
+[09:35:53] [INFO ] SearchResultsPage - ========================================
+[09:35:53] [INFO ] BaseTest - Price sort verified: PASSED
+[09:35:53] [INFO ] BaseTest - Extracting product data using lazy loading...
+[09:35:53] [INFO ] SearchResultsPage - Extracting up to 50 products using virtual scroll
+[09:35:53] [INFO ] SearchResultsPage - Starting virtual scroll extraction for 50 products
+[09:35:53] [INFO ] SearchResultsPage - Scroll 1: 13 visible cards, 0 extracted so far
+[09:35:53] [INFO ] SearchResultsPage - Extracted [1/50] index=0: Yamaha HS3 Powered Studio Monitor in Black, Pair (
+[09:35:53] [INFO ] SearchResultsPage - Extracted [2/50] index=1: ASUS TUF GAMING MONITOR
+[09:35:53] [INFO ] SearchResultsPage - Extracted [3/50] index=2: 12V 1A adapter/charger for router, LCD monitor
+[09:35:53] [INFO ] SearchResultsPage - Extracted [4/50] index=3: 12V 1A Adapter/ Charger AC/DC, SMPS for PC,monitor
+[09:35:53] [INFO ] SearchResultsPage - Extracted [5/50] index=4: DAHUA Monitor stand-LM22-H200
+[09:35:53] [INFO ] SearchResultsPage - Extracted [6/50] index=5: RENT 7" 4K HDMI/SDI Field/Director Monitor @ 500
+[09:35:54] [INFO ] SearchResultsPage - Extracted [7/50] index=6: Hot Shoe Mount Adapter For Camera Monitor
+[09:35:54] [INFO ] SearchResultsPage - Extracted [8/50] index=7: SMART HEALTH BRACELET WITH HEART RATE MONITOR
+[09:35:54] [INFO ] SearchResultsPage - Extracted [9/50] index=8: VGA MONITOR Y SPLITTER, 1 FOOT
+[09:35:54] [INFO ] SearchResultsPage - Extracted [10/50] index=9: VGA Monitor Y Splitter, 1 Foot
+[09:35:54] [INFO ] SearchResultsPage - Extracted [11/50] index=10: VGA MONITOR Y SPLITTER, 1 FOOT
+[09:35:54] [INFO ] SearchResultsPage - Extracted [12/50] index=11: VGA Monitor Y Splitter, 1 Foot
+[09:35:54] [INFO ] SearchResultsPage - Extracted [13/50] index=12: Swivel and Tilt Monitor Mount Mic Flash etc
+[09:35:54] [INFO ] BasePage - Scrolled to page bottom
+[09:36:04] [INFO ] SearchResultsPage - Scroll 2: 24 visible cards, 13 extracted so far
+[09:36:04] [INFO ] SearchResultsPage - Extracted [14/50] index=15: Mini DisplayPort to VGA Monitor Adapter
+[09:36:04] [INFO ] SearchResultsPage - Extracted [15/50] index=16: Battery Capacity Monitor 10-48V Battery Meter 12V
+[09:36:05] [INFO ] SearchResultsPage - Extracted [16/50] index=17: Gluco One Blood Glucose Monitoring System
+[09:36:05] [INFO ] SearchResultsPage - Extracted [17/50] index=18: KZ EDC PRO Detachable In Ear Monitors IEM
+[09:36:05] [INFO ] SearchResultsPage - Extracted [18/50] index=19: Desk Mount Bracket for 55" Monitor HB-5055-H
+[09:36:05] [INFO ] SearchResultsPage - Extracted [19/50] index=20: 17" hp monitor
+[09:36:05] [INFO ] SearchResultsPage - Extracted [20/50] index=21: TV / Computer Monitor Stand
+[09:36:05] [INFO ] SearchResultsPage - Extracted [21/50] index=22: 22 inch dell monitor display change garnu parxa
+[09:36:05] [INFO ] SearchResultsPage - Extracted [22/50] index=23: Samsung CRD monitor fresh condition
+[09:36:05] [INFO ] SearchResultsPage - Extracted [23/50] index=24: Mini DisplayPort to VGA Monitor Adapter
+[09:36:05] [INFO ] SearchResultsPage - Extracted [24/50] index=25: Teckin Smart WiFi 16A SA Plug With Energy Monitor
+[09:36:05] [INFO ] SearchResultsPage - Extracted [25/50] index=26: Mini DisplayPort to VGA Monitor Adapter
+[09:36:05] [INFO ] SearchResultsPage - Extracted [26/50] index=27: Mini DisplayPort to VGA Monitor Adapter
+[09:36:06] [INFO ] SearchResultsPage - Extracted [27/50] index=28: Gluco One Blood Glucose Monitoring System
+[09:36:06] [INFO ] SearchResultsPage - Extracted [28/50] index=29: VGA 15 Pin (3C+6) Monitor Cable 10Meter to 30Meter
+[09:36:06] [INFO ] SearchResultsPage - Extracted [29/50] index=30: 15 17 19 inch Dell ,Hp , Acer branded LCD monitor
+[09:36:06] [INFO ] SearchResultsPage - Extracted [30/50] index=31: Monitor
+[09:36:06] [INFO ] SearchResultsPage - Extracted [31/50] index=32: DisplayPort to HDTV Monitor Cable - 3Meter
+[09:36:06] [INFO ] SearchResultsPage - Extracted [32/50] index=33: Rossmax Manual BP Monitor WIth Sthetescope
+[09:36:06] [INFO ] SearchResultsPage - Extracted [33/50] index=34: Samsung led monitor 19"
+[09:36:06] [INFO ] SearchResultsPage - Extracted [34/50] index=35: Monitor Light Bar: Enhance Productivity & Eye Comf
+[09:36:06] [INFO ] SearchResultsPage - Extracted [35/50] index=36: T2 Pro Smart Watch Men Round Bluetooth Monitoring
+[09:36:06] [INFO ] SearchResultsPage - Extracted [36/50] index=37: Colour Calibrator service for Display Monitor
+[09:36:06] [INFO ] SearchResultsPage - Extracted [37/50] index=38: EVESVO Monitor Light Bar for Computer Screen
+[09:36:07] [INFO ] BasePage - Scrolled to page bottom
+[09:36:17] [INFO ] SearchResultsPage - Scroll 3: 24 visible cards, 37 extracted so far
+[09:36:17] [INFO ] SearchResultsPage - Extracted [38/50] index=42: Arm type fully Automatic Blood Pressure Monitor
+[09:36:17] [INFO ] SearchResultsPage - Extracted [39/50] index=43: Blood Pressure Monitoring YE610D
+[09:36:17] [INFO ] SearchResultsPage - Extracted [40/50] index=44: EDX Pro X in Ear Monitor Headphones
+[09:36:17] [INFO ] SearchResultsPage - Extracted [41/50] index=45: HF1976 Blood Pressure Monitor with Digital Monito
+[09:36:17] [INFO ] SearchResultsPage - Extracted [42/50] index=46: Digital Blood Pressure Monitor
+[09:36:17] [INFO ] SearchResultsPage - Extracted [43/50] index=47: DIRECTOR MONITOR. Available for rent
+[09:36:17] [INFO ] SearchResultsPage - Extracted [44/50] index=48: Wooden Monitor Stand
+[09:36:17] [INFO ] SearchResultsPage - Extracted [45/50] index=49: samsung lcd monitor (VGA) port
+[09:36:17] [INFO ] SearchResultsPage - Extracted [46/50] index=50: BenQ G615HDPL 15.6W" LED Monitor
+[09:36:17] [INFO ] SearchResultsPage - Extracted [47/50] index=51: MONITOR STAND - WALL MOUNT HB-4032-E
+[09:36:18] [INFO ] SearchResultsPage - Extracted [48/50] index=52: Dr Seibert blood pressure monitor/machine/BP set
+[09:36:18] [INFO ] SearchResultsPage - Extracted [49/50] index=53: Double Clamp Mount Bracket Monitor Magic Socket Ar
+[09:36:18] [INFO ] SearchResultsPage - Extracted [50/50] index=54: Alctron EPP005 5" Monitor Panel-Isolation Pad,Pair
+[09:36:18] [INFO ] SearchResultsPage - Reached target of 50 products!
+[09:36:18] [INFO ] SearchResultsPage - Virtual scroll complete: extracted 50 products in 2 scrolls
+[09:36:18] [INFO ] BaseTest - Successfully extracted 50 products
+[09:36:18] [INFO ] BaseTest - Saving 50 products to CSV: test-output/Search_Result_2026-02-17_09-35-12.csv
+[09:36:18] [INFO ] BaseTest - Writing 50 products to CSV: test-output/Search_Result_2026-02-17_09-35-12.csv
+[09:36:18] [INFO ] BaseTest - CSV saved: C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\test-output\Search_Result_2026-02-17_09-35-12.csv
+
+ CSV FILE SAVED: C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\test-output\Search_Result_2026-02-17_09-35-12.csv
+[09:36:18] [INFO ] BaseTest - Displaying 50 products in console
+
+================================================================================================================================================================
+SEARCH RESULTS - TOP 50 PRODUCTS (Sorted Low to High Price)
+================================================================================================================================================================
+SN   | No.  | Title                                    | Price           | Condition    | Posted Date     | Seller                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | 1    | Yamaha HS3 Powered Studio Monitor in ... | 1               | Brand New    | 1 years ago     | Nepal Music Gallery      
+2    | 2    | ASUS TUF GAMING MONITOR                  | 87              | Brand New    | 9 months ago    | pulse laptop care        
+3    | 3    | 12V 1A adapter/charger for router, LC... | 199             | Brand New    | 3 years ago     | Ayush Poudel             
+4    | 4    | 12V 1A Adapter/ Charger AC/DC, SMPS f... | 339             | Brand New    | 1 years ago     | e-Smart Technology       
+5    | 5    | DAHUA Monitor stand-LM22-H200            | 500             | Like New     | 10 months ago   | Ashil Neupane            
+6    | 6    | RENT 7" 4K HDMI/SDI Field/Director Mo... | 500             | Like New     | 1 years ago     | Kimbu Rental             
+7    | 7    | Hot Shoe Mount Adapter For Camera Mon... | 600             | Brand New    | 2 years ago     | KM Store                 
+8    | 8    | SMART HEALTH BRACELET WITH HEART RATE... | 799             | Brand New    | 4 years ago     | Cost2Cost Nepal          
+9    | 9    | VGA MONITOR Y SPLITTER, 1 FOOT           | 799             | Brand New    | 3 years ago     | Gadget House Nepal       
+10   | 10   | VGA Monitor Y Splitter, 1 Foot           | 799             | Brand New    | 2 years ago     | Best Deals               
+11   | 11   | VGA MONITOR Y SPLITTER, 1 FOOT           | 799             | Brand New    | 4 years ago     | Cost2Cost Nepal          
+12   | 12   | VGA Monitor Y Splitter, 1 Foot           | 800             | Brand New    | 2 years ago     | Birendra Shrestha        
+13   | 13   | Swivel and Tilt Monitor Mount Mic Fla... | 999             | Brand New    | 3 years ago     | Bits & Bobs              
+14   | 14   | Mini DisplayPort to VGA Monitor Adapter  | 1,050           | Brand New    | 4 years ago     | Tech Store               
+15   | 15   | Battery Capacity Monitor 10-48V Batte... | 1,099           | Brand New    | 1 years ago     | sajilo cart nepal        
+16   | 16   | Gluco One Blood Glucose Monitoring Sy... | 1,100           | Brand New    | 3 months ago    | Archana Surgical Suppl...
+17   | 17   | KZ EDC PRO Detachable In Ear Monitors... | 1,200           | Brand New    | 3 days ago      | sastogadgets.com         
+18   | 18   | Desk Mount Bracket for 55" Monitor HB... | 1,250           | Brand New    | 2 years ago     | Rhythm Kala Suppliers ...
+19   | 19   | 17" hp monitor                           | 1,499           | Used         | 2 months ago    | Laptop & Computer Store  
+20   | 20   | TV / Computer Monitor Stand              | 1,499           | Brand New    | 4 days ago      | AK Sharma                
+21   | 21   | 22 inch dell monitor display change g... | 1,500           | Used         | 9 months ago    | Sunil rai                
+22   | 22   | Samsung CRD monitor fresh condition      | 1,500           | Used         | 3 years ago     | itsme.com                
+23   | 23   | Mini DisplayPort to VGA Monitor Adapter  | 1,500           | Brand New    | 12 months ago   | A2z it Care              
+24   | 24   | Teckin Smart WiFi 16A SA Plug With En... | 1,550           | Brand New    | 2 years ago     | ONLINE EXPRESS           
+25   | 25   | Mini DisplayPort to VGA Monitor Adapter  | 1,550           | Brand New    | 1 years ago     | Kante Technology pvt.ltd 
+26   | 26   | Mini DisplayPort to VGA Monitor Adapter  | 1,550           | Brand New    | 1 years ago     | Kante Technology pvt.ltd 
+27   | 27   | Gluco One Blood Glucose Monitoring Sy... | 1,560           | Brand New    | 4 weeks ago     | Promed Surgical & Medi...
+28   | 28   | VGA 15 Pin (3C+6) Monitor Cable 10Met... | 1,699           | Brand New    | 2 years ago     | PCmag                    
+29   | 29   | 15 17 19 inch Dell ,Hp , Acer branded... | 1,700           | Like New     | 8 months ago    | Shreyan Office System ...
+30   | 30   | Monitor                                  | 1,700           | Used         | 2 weeks ago     | yognic shrestha          
+31   | 31   | DisplayPort to HDTV Monitor Cable - 3... | 1,900           | Brand New    | 3 years ago     | AB Tech                  
+32   | 32   | Rossmax Manual BP Monitor WIth Sthete... | 1,990           | Brand New    | 3 years ago     | Quality Shop             
+33   | 33   | Samsung led monitor 19"                  | 1,999           | Like New     | 3 weeks ago     | On line                  
+34   | 34   | Monitor Light Bar: Enhance Productivi... | 1,999           | Brand New    | 2 years ago     | Exort Tech               
+35   | 35   | T2 Pro Smart Watch Men Round Bluetoot... | 1,999           | Not Working  | 1 years ago     | The Seraphic             
+36   | 36   | Colour Calibrator service for Display... | 2,000           | Brand New    | 3 years ago     | Dakshya Artistry         
+37   | 37   | EVESVO Monitor Light Bar for Computer... | 2,000           | Brand New    | 2 years ago     | Technoholic Nepal        
+38   | 38   | Arm type fully Automatic Blood Pressu... | 2,200           | Brand New    | 4 weeks ago     | Promed Surgical & Medi...
+39   | 39   | Blood Pressure Monitoring YE610D         | 2,200           | Brand New    | 11 months ago   | Alinep Online Shopping   
+40   | 40   | EDX Pro X in Ear Monitor Headphones      | 2,240           | Brand New    | 1 years ago     | Nepal Music Gallery      
+41   | 41   | HF1976 Blood Pressure Monitor with Di... | 2,499           | Brand New    | 2 years ago     | Unique store             
+42   | 42   | Digital Blood Pressure Monitor           | 2,499           | Brand New    | 2 years ago     | Unique store             
+43   | 43   | DIRECTOR MONITOR. Available for rent     | 2,500           | Like New     | 2 years ago     | Film Crew Nepal          
+44   | 44   | Wooden Monitor Stand                     | 2,500           | Brand New    | 3 weeks ago     | Trincula                 
+45   | 45   | samsung lcd monitor (VGA) port           | 2,500           | Used         | 4 weeks ago     | sampi                    
+46   | 46   | BenQ G615HDPL 15.6W" LED Monitor         | 2,500           | Like New     | 3 years ago     | Kathmandu Laptop Servi...
+47   | 47   | MONITOR STAND - WALL MOUNT HB-4032-E     | 2,500           | Brand New    | 2 years ago     | Rhythm Kala Suppliers ...
+48   | 48   | Dr Seibert blood pressure monitor/mac... | 2,650           | Brand New    | 3 years ago     | Home Health              
+49   | 49   | Double Clamp Mount Bracket Monitor Ma... | 2,799           | Brand New    | 8 months ago    | Gadget Deals Nepal       
+50   | 50   | Alctron EPP005 5" Monitor Panel-Isola... | 2,800           | Brand New    | 1 years ago     | Guitar Zone              
+================================================================================================================================================================
+Total Products: 50
+CSV File: test-output/Search_Result_2026-02-17_09-35-12.csv
+================================================================================================================================================================
+
+[09:36:18] [INFO ] BaseTest - ========================================
+[09:36:18] [INFO ] BaseTest - Complete End-to-End Test PASSED (Single Session)
+[09:36:18] [INFO ] BaseTest - ========================================
+[09:36:18] [INFO ] ExtentReportListener - Test Passed: testCompleteSearchFlowInOneSession
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Feb 17, 2026 9:35:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 144
+Feb 17, 2026 9:35:14 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 144.0.7559.135. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

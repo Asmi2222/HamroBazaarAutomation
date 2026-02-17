@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    
+    <!-- Where to save logs -->
+    <Properties>
+        <Property name="log-path">logs</Property>
+    </Properties>
+    
+    <Appenders>
+        
+        <!-- Print to Console (Eclipse Console) -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{HH:mm:ss}] [%-5level] %logger{1} - %msg%n"/>
+        </Console>
+        
+        <!-- Save to File -->
+        <File name="FileLogger" fileName="${log-path}/test-execution.log">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%-5level] %logger{36} - %msg%n"/>
+        </File>
+        
+    </Appenders>
+    
+    <Loggers>
+        <!-- Our application logs -->
+        <Logger name="com.hamrobazaar" level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Logger>
+        
+        <!-- Root logger -->
+        <Root level="WARN">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+    
+</Configuration>

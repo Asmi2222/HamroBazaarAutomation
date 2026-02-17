@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HamroBazaar Automation Test Suite" parallel="false" thread-count="1" verbose="1">
+    
+    <parameter name="browser" value="chrome"/>
+    <parameter name="headless" value="false"/>
+    
+    <listeners>
+        <listener class-name="com.hamrobazaar.utils.ExtentReportListener"/>
+    </listeners>
+    
+    <test name="HamroBazaar Complete End-to-End Test" preserve-order="true">
+        <classes>
+            <!-- Complete flow: Search → Filter → Sort → Extract → Save CSV (All in One Session) -->
+            <class name="com.hamrobazaar.tests.SearchResultsTest">
+                <methods>
+                    <include name="testCompleteSearchFlowInOneSession"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>
