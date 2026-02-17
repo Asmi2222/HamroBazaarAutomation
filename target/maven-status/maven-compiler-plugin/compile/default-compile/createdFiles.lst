@@ -1,4 +1,6 @@
+com\hamrobazaar\enums\SortOrder.class
 com\hamrobazaar\base\BasePage.class
+com\hamrobazaar\pages\FilterPage.class
 com\hamrobazaar\base\BaseTest.class
 com\hamrobazaar\pages\SearchResultsPage.class
 com\hamrobazaar\utils\CSVReaderUtil.class

@@ -1,5 +1,7 @@
 C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\src\main\java\com\hamrobazaar\base\BasePage.java
 C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\src\main\java\com\hamrobazaar\base\BaseTest.java
+C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\src\main\java\com\hamrobazaar\enums\SortOrder.java
+C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\src\main\java\com\hamrobazaar\pages\FilterPage.java
 C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\src\main\java\com\hamrobazaar\pages\HomePage.java
 C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\src\main\java\com\hamrobazaar\pages\SearchResultsPage.java
 C:\Users\I1002567\eclipse-workspace\HamroBazaarAutomation\src\main\java\com\hamrobazaar\utils\CSVReaderUtil.java

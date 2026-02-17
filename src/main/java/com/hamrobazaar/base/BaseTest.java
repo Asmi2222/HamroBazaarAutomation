@@ -18,10 +18,7 @@ import org.testng.annotations.Parameters;
 
 import java.time.Duration;
 
-/**
- * BaseTest - Parent class for all test classes
- * Handles WebDriver initialization and cleanup
- */
+
 public class BaseTest {
     
     protected static final Logger log = LogManager.getLogger(BaseTest.class);
@@ -32,16 +29,13 @@ public class BaseTest {
     protected static final int EXPLICIT_WAIT = 20;
     protected static final int PAGE_LOAD_TIMEOUT = 30;
     
-    /**
-     * Setup method - Runs before each test method
-     * Initializes WebDriver based on browser parameter
-     */
+   
     @BeforeMethod
     @Parameters({"browser"})
     public void setUp(@Optional("chrome") String browser) {
-        log.info("========================================");
+        
         log.info("Setting up WebDriver for browser: {}", browser);
-        log.info("========================================");
+        
         
         try {
             // Initialize WebDriver based on browser parameter
@@ -71,12 +65,7 @@ public class BaseTest {
         }
     }
     
-    /**
-     * Initialize WebDriver based on browser type
-     * 
-     * @param browser Browser name (chrome, firefox, edge)
-     * @return WebDriver instance
-     */
+    
     private WebDriver initializeDriver(String browser) {
         WebDriver driver;
         
@@ -121,15 +110,11 @@ public class BaseTest {
         return driver;
     }
     
-    /**
-     * Teardown method - Runs after each test method
-     * Quits WebDriver and cleans up resources
-     */
+    
     @AfterMethod
     public void tearDown() {
-        log.info("========================================");
+        
         log.info("Tearing down WebDriver");
-        log.info("========================================");
         
         try {
             if (driver != null) {
@@ -142,33 +127,21 @@ public class BaseTest {
         }
     }
     
-    /**
-     * Navigate to URL
-     * 
-     * @param url URL to navigate to
-     */
+    
     protected void navigateToURL(String url) {
         log.info("Navigating to URL: {}", url);
         driver.get(url);
         log.info("Successfully navigated to: {}", driver.getCurrentUrl());
     }
     
-    /**
-     * Get current page title
-     * 
-     * @return Page title
-     */
+    
     protected String getPageTitle() {
         String title = driver.getTitle();
         log.info("Current page title: {}", title);
         return title;
     }
     
-    /**
-     * Get current URL
-     * 
-     * @return Current URL
-     */
+   
     protected String getCurrentURL() {
         String url = driver.getCurrentUrl();
         log.info("Current URL: {}", url);

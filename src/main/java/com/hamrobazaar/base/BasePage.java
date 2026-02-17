@@ -12,10 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-/**
- * BasePage - Parent class for all Page Object classes
- * Contains common WebDriver operations and wait utilities
- */
+
 public class BasePage {
     
     protected static final Logger log = LogManager.getLogger(BasePage.class);
@@ -23,14 +20,10 @@ public class BasePage {
     protected WebDriverWait wait;
     protected Actions actions;
     
-    // Default wait timeout in seconds
+    
     private static final int DEFAULT_WAIT = 20;
     
-    /**
-     * Constructor - Initializes WebDriver and utilities
-     * 
-     * @param driver WebDriver instance
-     */
+    
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_WAIT));
@@ -38,14 +31,7 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
     
-    //  WAIT METHODS 
-    
-    /**
-     * Wait for element to be visible
-     * 
-     * @param element WebElement to wait for
-     * @return WebElement after it's visible
-     */
+   
     protected WebElement waitForElementToBeVisible(WebElement element) {
         try {
             log.debug("Waiting for element to be visible");
@@ -56,12 +42,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Wait for element to be clickable
-     * 
-     * @param element WebElement to wait for
-     * @return WebElement after it's clickable
-     */
+    
     protected WebElement waitForElementToBeClickable(WebElement element) {
         try {
             log.debug("Waiting for element to be clickable");
@@ -72,12 +53,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Wait for element located by locator
-     * 
-     * @param locator By locator
-     * @return WebElement after it's visible
-     */
+    
     protected WebElement waitForElement(By locator) {
         try {
             log.debug("Waiting for element: {}", locator);
@@ -88,12 +64,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Wait for all elements located by locator
-     * 
-     * @param locator By locator
-     * @return List of WebElements
-     */
+    
     protected List<WebElement> waitForElements(By locator) {
         try {
             log.debug("Waiting for elements: {}", locator);
@@ -104,11 +75,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Wait for element to disappear
-     * 
-     * @param locator By locator
-     */
+    
     protected void waitForElementToDisappear(By locator) {
         try {
             log.debug("Waiting for element to disappear: {}", locator);
@@ -118,13 +85,7 @@ public class BasePage {
         }
     }
     
-    // ==================== CLICK METHODS ====================
     
-    /**
-     * Click on element with wait
-     * 
-     * @param element WebElement to click
-     */
     protected void click(WebElement element) {
         try {
             waitForElementToBeClickable(element);
@@ -136,11 +97,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Click using JavaScript (for stubborn elements)
-     * 
-     * @param element WebElement to click
-     */
+    
     protected void clickUsingJS(WebElement element) {
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -152,14 +109,7 @@ public class BasePage {
         }
     }
     
-    // ==================== INPUT METHODS ====================
     
-    /**
-     * Send keys to element with wait and clear
-     * 
-     * @param element WebElement to type in
-     * @param text Text to type
-     */
     protected void sendKeys(WebElement element, String text) {
         try {
             waitForElementToBeVisible(element);
@@ -172,12 +122,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Send keys using JavaScript
-     * 
-     * @param element WebElement
-     * @param text Text to type
-     */
+    
     protected void sendKeysUsingJS(WebElement element, String text) {
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -189,14 +134,7 @@ public class BasePage {
         }
     }
     
-    // ==================== GET METHODS ====================
-    
-    /**
-     * Get text from element
-     * 
-     * @param element WebElement
-     * @return Text content
-     */
+   
     protected String getText(WebElement element) {
         try {
             waitForElementToBeVisible(element);
@@ -209,13 +147,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Get attribute value from element
-     * 
-     * @param element WebElement
-     * @param attribute Attribute name
-     * @return Attribute value
-     */
+   
     protected String getAttribute(WebElement element, String attribute) {
         try {
             waitForElementToBeVisible(element);
@@ -228,14 +160,7 @@ public class BasePage {
         }
     }
     
-    // ==================== DROPDOWN METHODS ====================
-    
-    /**
-     * Select dropdown option by visible text
-     * 
-     * @param element Dropdown element
-     * @param text Visible text to select
-     */
+   
     protected void selectByVisibleText(WebElement element, String text) {
         try {
             waitForElementToBeVisible(element);
@@ -248,12 +173,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Select dropdown option by value
-     * 
-     * @param element Dropdown element
-     * @param value Value attribute
-     */
+    
     protected void selectByValue(WebElement element, String value) {
         try {
             waitForElementToBeVisible(element);
@@ -266,14 +186,7 @@ public class BasePage {
         }
     }
     
-    // ==================== SCROLL METHODS ====================
-    
-    /**
-     * Scroll to element using JavaScript
-     * Scrolls element to center of viewport for better visibility
-     * 
-     * @param element WebElement to scroll to
-     */
+   
     protected void scrollToElement(WebElement element) {
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -285,12 +198,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Scroll to element with highlight for better visibility
-     * Use this for important actions you want to see
-     * 
-     * @param element WebElement to scroll to
-     */
+    
     protected void scrollToElementAndHighlight(WebElement element) {
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -322,9 +230,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Scroll page to bottom
-     */
+    
     protected void scrollToBottom() {
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -335,14 +241,7 @@ public class BasePage {
         }
     }
     
-    // ==================== VERIFICATION METHODS ====================
     
-    /**
-     * Check if element is displayed
-     * 
-     * @param element WebElement
-     * @return true if displayed
-     */
     protected boolean isDisplayed(WebElement element) {
         try {
             return element.isDisplayed();
@@ -351,12 +250,7 @@ public class BasePage {
         }
     }
     
-    /**
-     * Check if element is enabled
-     * 
-     * @param element WebElement
-     * @return true if enabled
-     */
+    
     protected boolean isEnabled(WebElement element) {
         try {
             return element.isEnabled();

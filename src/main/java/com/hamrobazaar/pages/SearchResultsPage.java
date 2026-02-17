@@ -88,17 +88,11 @@ public class SearchResultsPage extends BasePage {
         log.info("Applied Low to High sort");
     }
 
-    /**
-     * PRICE VERIFICATION:
-     * Step 1: findElements to get all prices → store in originalPrices
-     * Step 2: copy originalPrices → sortedPrices
-     * Step 3: Collections.sort(sortedPrices) ascending
-     * Step 4: compare originalPrices == sortedPrices
-     */
+    
     public boolean verifyPriceSortedLowToHigh() {
-        log.info("========================================");
+        
         log.info("PRICE SORT VERIFICATION STARTED");
-        log.info("========================================");
+        
 
         try {
             // Step 1: Find all price elements and store in originalPrices
@@ -158,13 +152,13 @@ public class SearchResultsPage extends BasePage {
                 );
             }
 
-            log.info("========================================");
+            
             if (isSorted) {
                 log.info(" VERIFICATION PASSED - Prices ARE sorted Low to High");
             } else {
                 log.warn("VERIFICATION FAILED - Prices NOT sorted Low to High");
             }
-            log.info("========================================");
+            
 
             return isSorted;
 
@@ -226,16 +220,7 @@ public class SearchResultsPage extends BasePage {
         return finalCards;
     }
 
-    /**
-     * Extract products using virtual scroll approach:
-     * - HamroBazaar uses virtual scrolling (data-index) 
-     * - Only ~24 cards are in DOM at once
-     * - We extract visible cards, scroll, extract new cards, repeat
-     * - Use data-index to track which products we already extracted
-     *
-     * @param maxCount Target number of products
-     * @return All extracted product data
-     */
+    
     public List<Map<String, String>> extractWithVirtualScroll(int maxCount) {
         log.info("Starting virtual scroll extraction for {} products", maxCount);
 

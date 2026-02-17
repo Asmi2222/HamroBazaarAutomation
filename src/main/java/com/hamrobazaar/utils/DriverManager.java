@@ -4,21 +4,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-/**
- * DriverManager - Thread-safe WebDriver manager
- * Manages WebDriver instances for parallel test execution
- */
 public class DriverManager {
     
     private static final Logger log = LogManager.getLogger(DriverManager.class);
     
-    // ThreadLocal to store WebDriver instances for each thread
+    
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     
-    /**
-     * Get the WebDriver instance for current thread
-     * @return WebDriver instance
-     */
+   
     public static WebDriver getDriver() {
         WebDriver currentDriver = driver.get();
         System.out.println("DriverManager.getDriver() called - Thread: " + Thread.currentThread().getId());
@@ -27,18 +20,13 @@ public class DriverManager {
         return currentDriver;
     }
     
-    /**
-     * Set the WebDriver instance for current thread
-     * @param driverInstance WebDriver instance to set
-     */
+    
     public static void setDriver(WebDriver driverInstance) {
         driver.set(driverInstance);
         log.info("WebDriver instance set for thread: {}", Thread.currentThread().getId());
     }
     
-    /**
-     * Quit and remove the WebDriver instance for current thread
-     */
+    
     public static void quitDriver() {
         if (driver.get() != null) {
             try {

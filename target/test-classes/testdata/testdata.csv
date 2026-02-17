@@ -1,2 +1,4 @@
-﻿Test name ,Search keyword,Location and distance ,Distance from location
-HamroBazaarMonitorSearch,monitor,"Naya Sadak, New Road, Kathmandu-22, Kathmandu",10km
+﻿Test name ,Search keyword,Location and distance ,Distance from location,Quality,Pricing from,Pricing to,Negotiable ,Sort Order
+HamroBazaarMonitorSearch,monitor,"Naya Sadak, New Road, Kathmandu-22, Kathmandu",10km,,,,,Low to High(Price)
+HamroBazaarCarSearch,Car,"Labim Mall, Pulchowk, Lalitpur, Lalitpur-3, Lalitpur",1km,Used,100000,10000000,Any,High to Low (Price)
+HamroBazaarBookSearch,book,"Labim Mall, Pulchowk, Lalitpur, Lalitpur-3, Lalitpur",1km,Brand New,100,1500,Any,A to Z

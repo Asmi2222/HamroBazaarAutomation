@@ -173,51 +173,5 @@ public class HomeTest extends BaseTest {
         }
     }
     
-    /**
-     * Test: Search using high-level method (searchWithFilters)
-     * Alternative approach using single method call
-     
-    @Test(priority = 2, description = "Search using high-level searchWithFilters method", enabled = false)
-    public void testSearchWithFiltersHighLevel() {
-        
-        try {
-            log.info("Starting testSearchWithFiltersHighLevel");
-            
-            // Read test data from CSV
-            ExtentReportListener.getTest().log(Status.INFO, "Reading test data from CSV");
-            Map<String, String> testData = CSVReaderUtil.getTestData(CSV_PATH);
-            
-            String searchKeyword = testData.get("Search keyword");
-            String location = testData.get("Location and distance");
-            String distance = testData.get("Distance from location");
-            
-            // Navigate to website
-            ExtentReportListener.getTest().log(Status.INFO, "Navigating to HamroBazaar");
-            navigateToURL("https://hamrobazaar.com/");
-            
-            // Initialize page and perform search
-            HomePage homePage = new HomePage(driver);
-            
-            ExtentReportListener.getTest().log(Status.INFO, "Executing searchWithFilters method");
-            
-            try {
-                homePage.searchWithFilters(searchKeyword, location, distance);
-                ExtentReportListener.getTest().log(Status.PASS, 
-                    " Search with filters completed successfully");
-            } catch (Exception e) {
-                log.error("searchWithFilters failed: {}", e.getMessage());
-                ExtentReportListener.getTest().log(Status.FAIL, 
-                    " searchWithFilters failed: " + e.getMessage());
-                throw e;
-            }
-            
-            log.info("testSearchWithFiltersHighLevel completed successfully");
-            
-        } catch (Exception e) {
-            log.error("Test failed: {}", e.getMessage(), e);
-            ExtentReportListener.getTest().log(Status.FAIL, "Test failed: " + e.getMessage());
-            Assert.fail("Test failed: " + e.getMessage());
-        }
-    }
-    */
+    
 }

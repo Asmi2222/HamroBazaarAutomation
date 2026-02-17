@@ -1,0 +1,690 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>HamroBazaar Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Monitor Search Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 17, 2026 14:34:57</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCompleteSearchFlowInOneSession</p>
+            <p class="text-sm">
+              <span>2:34:59 PM</span> / <span>00:01:12:209</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCompleteSearchFlowInOneSession</h5>
+<span class='badge badge-success'>02.17.2026 2:34:59 PM</span>
+<span class='badge badge-danger'>02.17.2026 2:36:12 PM</span>
+<span class='badge badge-default'>00:01:12:209</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Complete Search, Filter, Sort, Extract, and Save - All in One Session</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:34:59 PM</td>
+        <td>
+          Test Started: testCompleteSearchFlowInOneSession
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:34:59 PM</td>
+        <td>
+          Step 1: Reading test data from CSV
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:34:59 PM</td>
+        <td>
+          Test Data: monitor, Naya Sadak, New Road, Kathmandu-22, Kathmandu, 10km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:34:59 PM</td>
+        <td>
+          Step 2: Navigating to HamroBazaar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:13 PM</td>
+        <td>
+          Navigated to HamroBazaar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:13 PM</td>
+        <td>
+          Step 3: Searching with filters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:13 PM</td>
+        <td>
+          Searched for: monitor
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:15 PM</td>
+        <td>
+          Set location: Naya Sadak, New Road, Kathmandu-22, Kathmandu
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:16 PM</td>
+        <td>
+          Set distance: 10km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:16 PM</td>
+        <td>
+          Applied filters - Now on results page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:16 PM</td>
+        <td>
+          Step 4: Initializing Search Results Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:16 PM</td>
+        <td>
+          Step 5: Sorting by Low to High Price
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:46 PM</td>
+        <td>
+          Sorted by Low to High Price
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:46 PM</td>
+        <td>
+          Step 6: Verifying prices are sorted Low to High
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:46 PM</td>
+        <td>
+          Price verification PASSED - Prices confirmed Low to High
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:46 PM</td>
+        <td>
+          Step 7: Extracting top 50 products
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:12 PM</td>
+        <td>
+          Extracted 50 products
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:12 PM</td>
+        <td>
+          Step 8: Saving results to CSV
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:12 PM</td>
+        <td>
+          Saved to: test-output/Search_Result_2026-02-17_14-34-57.csv
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:12 PM</td>
+        <td>
+          Step 9: Displaying results
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:12 PM</td>
+        <td>
+          Results displayed in console
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:12 PM</td>
+        <td>
+          ALL STEPS COMPLETED SUCCESSFULLY
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:12 PM</td>
+        <td>
+          <span class='badge white-text green'>Test PASSED: testCompleteSearchFlowInOneSession</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCarSearch</p>
+            <p class="text-sm">
+              <span>2:36:14 PM</span> / <span>00:00:12:036</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCarSearch</h5>
+<span class='badge badge-success'>02.17.2026 2:36:14 PM</span>
+<span class='badge badge-danger'>02.17.2026 2:36:26 PM</span>
+<span class='badge badge-default'>00:00:12:036</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Car Search - Used condition, High to Low price, 100000-10000000 range</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/testCarSearch_FAILED_2026-02-17_14-36-26.png' src="../screenshots/testCarSearch_FAILED_2026-02-17_14-36-26.png">
+    <div class="title">Failure Screenshot</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:14 PM</td>
+        <td>
+          Test Started: testCarSearch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:14 PM</td>
+        <td>
+          Car: keyword=Car | sort=High to Low (Price) | condition=Used | price=100000-10000000
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:21 PM</td>
+        <td>
+          Navigated to HamroBazaar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:21 PM</td>
+        <td>
+          Searched for: Car
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:23 PM</td>
+        <td>
+          Set location: Labim Mall, Pulchowk, Lalitpur, Lalitpur-3, Lalitpur
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:25 PM</td>
+        <td>
+          Set distance: 1km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:36:26 PM</td>
+        <td>
+          Car test failed: Unable to set condition: element click intercepted: Element <input id="_r_1r_-form-item" class="peer block w-full bg-transparent outline-none border-0 focus:placeholder:text-on-surface-dim-2 text-on-surface-sharp caret-accent-surface disabled:cursor-not-allowed paragraph-primary-regular placeholder:form-placeholder py-0.5 placeholder:text-transparent pt-3 pr-10 truncate text-base" placeholder="Search..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="_r_1s_-listbox" aria-autocomplete="list" aria-describedby="_r_1r_-form-item-description" aria-invalid="false" value="" name="condition"> is not clickable at point (954, 17). Other element would receive the click: <div class="flex items-center justify-between gap-2 sm:gap-6 md:gap-6 py-2 sm:py-4 lg:py-6 xl:pr-4 xl:pl-0">...</div>
+  (Session info: chrome=144.0.7559.135)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf9a8176a3ecfa569d54d911a3da1883, clickElement {id=f.F74D423E08164F89C4AAFBC74EDED412.d.8B3517AB5D466D38A16A5C5B0C9E6CA0.e.16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.135, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\I1002567\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62947}, goog:processID: 18640, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62947/devtoo..., se:cdpVersion: 144.0.7559.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bf9a8176a3ecfa569d54d911a3da1883)] -> css selector: input[name='condition']]
+Session ID: bf9a8176a3ecfa569d54d911a3da1883
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:36:26 PM</td>
+        <td>
+          <span class='badge white-text red'>Test FAILED: testCarSearch</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:36:26 PM</td>
+        <td>
+          Failure Reason: java.lang.AssertionError: Car test failed: Unable to set condition: element click intercepted: Element <input id="_r_1r_-form-item" class="peer block w-full bg-transparent outline-none border-0 focus:placeholder:text-on-surface-dim-2 text-on-surface-sharp caret-accent-surface disabled:cursor-not-allowed paragraph-primary-regular placeholder:form-placeholder py-0.5 placeholder:text-transparent pt-3 pr-10 truncate text-base" placeholder="Search..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="_r_1s_-listbox" aria-autocomplete="list" aria-describedby="_r_1r_-form-item-description" aria-invalid="false" value="" name="condition"> is not clickable at point (954, 17). Other element would receive the click: <div class="flex items-center justify-between gap-2 sm:gap-6 md:gap-6 py-2 sm:py-4 lg:py-6 xl:pr-4 xl:pl-0">...</div>
+  (Session info: chrome=144.0.7559.135)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf9a8176a3ecfa569d54d911a3da1883, clickElement {id=f.F74D423E08164F89C4AAFBC74EDED412.d.8B3517AB5D466D38A16A5C5B0C9E6CA0.e.16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.135, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\I1002567\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62947}, goog:processID: 18640, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62947/devtoo..., se:cdpVersion: 144.0.7559.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bf9a8176a3ecfa569d54d911a3da1883)] -> css selector: input[name='condition']]
+Session ID: bf9a8176a3ecfa569d54d911a3da1883
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:36:26 PM</td>
+        <td>
+          <details><summary>Stack Trace</summary>[org.testng.Assert.fail(Assert.java:111)<br> com.hamrobazaar.tests.CarAndBookTest.testCarSearch(CarAndBookTest.java:130)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:566)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1541)<br> org.testng.TestRunner.privateRun(TestRunner.java:819)<br> org.testng.TestRunner.run(TestRunner.java:619)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1228)<br> org.testng.TestNG.runSuites(TestNG.java:1134)<br> org.testng.TestNG.run(TestNG.java:1101)<br> org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)<br> org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)<br> org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)<br> org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br> org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br> org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br> org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]</details>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testBookSearch</p>
+            <p class="text-sm">
+              <span>2:36:28 PM</span> / <span>00:00:14:368</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testBookSearch</h5>
+<span class='badge badge-success'>02.17.2026 2:36:28 PM</span>
+<span class='badge badge-danger'>02.17.2026 2:36:42 PM</span>
+<span class='badge badge-default'>00:00:14:368</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Book Search - Brand New condition, A to Z sort, 100-1500 price range</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/testBookSearch_FAILED_2026-02-17_14-36-42.png' src="../screenshots/testBookSearch_FAILED_2026-02-17_14-36-42.png">
+    <div class="title">Failure Screenshot</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:28 PM</td>
+        <td>
+          Test Started: testBookSearch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:28 PM</td>
+        <td>
+          Book: keyword=book | sort=A to Z | condition=Brand New | price=100-1500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:37 PM</td>
+        <td>
+          Navigated to HamroBazaar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:37 PM</td>
+        <td>
+          Searched for: book
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:39 PM</td>
+        <td>
+          Set location: Labim Mall, Pulchowk, Lalitpur, Lalitpur-3, Lalitpur
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:41 PM</td>
+        <td>
+          Set distance: 1km
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:36:42 PM</td>
+        <td>
+          Book test failed: Unable to set condition: element click intercepted: Element <input id="_r_52_-form-item" class="peer block w-full bg-transparent outline-none border-0 focus:placeholder:text-on-surface-dim-2 text-on-surface-sharp caret-accent-surface disabled:cursor-not-allowed paragraph-primary-regular placeholder:form-placeholder py-0.5 placeholder:text-transparent pt-3 pr-10 truncate text-base" placeholder="Search..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="_r_53_-listbox" aria-autocomplete="list" aria-describedby="_r_52_-form-item-description" aria-invalid="false" value="" name="condition"> is not clickable at point (954, 27). Other element would receive the click: <button class="inline-flex py-0 items-center text-nowrap justify-center gap-3 font-medium transition-colors focus-visible:outline-nonedisabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:shrink-0 [&amp;_svg]:h-6 [&amp;_svg]:w-6 h-11 px-3 button-primary min-w-[100px] bg-transparent rounded-lg text-on-surface-sharp hover:bg-tertiary-hover-surface hover:text-tertiary-hover-on-surface active:bg-tertiary-active-surface active:text-tertiary-active-on-surface">...</button>
+  (Session info: chrome=144.0.7559.135)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6acc5ff5cf84fa3531b1f08038009de, clickElement {id=f.8AC13677588D218958DF7B34600CC596.d.B2D8BD7D9FB9ACC388610169772B2460.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.135, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\I1002567\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56110}, goog:processID: 200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56110/devtoo..., se:cdpVersion: 144.0.7559.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b6acc5ff5cf84fa3531b1f08038009de)] -> css selector: input[name='condition']]
+Session ID: b6acc5ff5cf84fa3531b1f08038009de
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:36:42 PM</td>
+        <td>
+          <span class='badge white-text red'>Test FAILED: testBookSearch</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:36:42 PM</td>
+        <td>
+          Failure Reason: java.lang.AssertionError: Book test failed: Unable to set condition: element click intercepted: Element <input id="_r_52_-form-item" class="peer block w-full bg-transparent outline-none border-0 focus:placeholder:text-on-surface-dim-2 text-on-surface-sharp caret-accent-surface disabled:cursor-not-allowed paragraph-primary-regular placeholder:form-placeholder py-0.5 placeholder:text-transparent pt-3 pr-10 truncate text-base" placeholder="Search..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="_r_53_-listbox" aria-autocomplete="list" aria-describedby="_r_52_-form-item-description" aria-invalid="false" value="" name="condition"> is not clickable at point (954, 27). Other element would receive the click: <button class="inline-flex py-0 items-center text-nowrap justify-center gap-3 font-medium transition-colors focus-visible:outline-nonedisabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:shrink-0 [&amp;_svg]:h-6 [&amp;_svg]:w-6 h-11 px-3 button-primary min-w-[100px] bg-transparent rounded-lg text-on-surface-sharp hover:bg-tertiary-hover-surface hover:text-tertiary-hover-on-surface active:bg-tertiary-active-surface active:text-tertiary-active-on-surface">...</button>
+  (Session info: chrome=144.0.7559.135)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6acc5ff5cf84fa3531b1f08038009de, clickElement {id=f.8AC13677588D218958DF7B34600CC596.d.B2D8BD7D9FB9ACC388610169772B2460.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.135, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\I1002567\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56110}, goog:processID: 200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56110/devtoo..., se:cdpVersion: 144.0.7559.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b6acc5ff5cf84fa3531b1f08038009de)] -> css selector: input[name='condition']]
+Session ID: b6acc5ff5cf84fa3531b1f08038009de
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:36:42 PM</td>
+        <td>
+          <details><summary>Stack Trace</summary>[org.testng.Assert.fail(Assert.java:111)<br> com.hamrobazaar.tests.CarAndBookTest.testBookSearch(CarAndBookTest.java:231)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:566)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1541)<br> org.testng.TestRunner.privateRun(TestRunner.java:819)<br> org.testng.TestRunner.run(TestRunner.java:619)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1228)<br> org.testng.TestNG.runSuites(TestNG.java:1134)<br> org.testng.TestNG.run(TestNG.java:1101)<br> org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)<br> org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)<br> org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)<br> org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)<br> org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br> org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)<br> org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]</details>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 17, 2026 14:34:57</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 17, 2026 14:36:43</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='33%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='66%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='46%'><b>20</b> events passed</small></div>
+<div>
+<small data-tooltip='18%'><b>8</b> events failed,
+<b data-tooltip='%'>15</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testCompleteSearchFlowInOneSession":72.209,"testCarSearch":12.036,"testBookSearch":14.368
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Application</td>
+<td>HamroBazaar</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Automation Engineer</td>
+<td>Asmi Bajracharya</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>QA Engineer</td>
+</tr>
+<tr>
+<td>User</td>
+<td>I1002567</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>11.0.22</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 20,
+failEvents: 8,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 15
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
