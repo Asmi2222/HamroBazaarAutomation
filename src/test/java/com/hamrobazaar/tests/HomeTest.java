@@ -10,25 +10,19 @@ import org.testng.annotations.Test;
 
 import java.util.Map;
 
-/**
- * HomeTest - Test class for HamroBazaar Home Page functionality
- * Reads test data from CSV and performs search with filters
- */
+
 public class HomeTest extends BaseTest {
     
     private static final String CSV_PATH = "src/test/resources/testdata/testdata.csv";
     
-    /**
-     * Test: Search for Monitor with location and distance filters
-     * Reads all data from CSV file
-     */
+    
     @Test(priority = 1, description = "Search Monitor with New Road location and 10km distance")
     public void testSearchWithFilters() {
         
         try {
-            log.info("========================================");
+            
             log.info("Starting testSearchWithFilters");
-            log.info("========================================");
+            
             
             // Step 1: Read test data from CSV
             ExtentReportListener.getTest().log(Status.INFO, "Reading test data from CSV file");
@@ -154,17 +148,17 @@ public class HomeTest extends BaseTest {
                 throw e;
             }
             
-            log.info("========================================");
+          
             log.info("testSearchWithFilters completed successfully");
-            log.info("========================================");
+           
             
             ExtentReportListener.getTest().log(Status.PASS, 
                 "Test completed successfully - Search with filters executed");
             
         } catch (Exception e) {
-            log.error("========================================");
+           
             log.error("Test failed with exception: {}", e.getMessage(), e);
-            log.error("========================================");
+           
             
             ExtentReportListener.getTest().log(Status.FAIL, 
                 "Test failed with exception: " + e.getMessage());

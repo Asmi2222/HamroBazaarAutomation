@@ -16,12 +16,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-/**
- * CarAndBookTest - Separate test class for Car and Book searches.
- * Uses HomePage for search/location/distance (reused from SearchResultsTest).
- * Uses FilterPage (NEW) for condition, price range, negotiable, sort.
- * Does NOT modify HomePage, SearchResultsPage, or SearchResultsTest.
- */
+
 public class CarAndBookTest extends BaseTest {
 
     private static final String CSV_PATH   = "src/test/resources/testdata/testdata.csv";
@@ -30,15 +25,15 @@ public class CarAndBookTest extends BaseTest {
     private static final String TIMESTAMP =
         new java.text.SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new java.util.Date());
 
-    // ==================== CAR TEST ====================
+  
 
     @Test(priority = 1, description = "Car Search - Used condition, High to Low price, 100000-10000000 range")
     public void testCarSearch() {
 
         try {
-            log.info("========================================");
+            
             log.info("Starting Car Search Test");
-            log.info("========================================");
+            
 
             // Read row index 1 (Car row) from CSV
             Map<String, String> data = CSVReaderUtil.getTestData(CSV_PATH, 1);
@@ -131,15 +126,15 @@ public class CarAndBookTest extends BaseTest {
         }
     }
 
-    // ==================== BOOK TEST ====================
+    
 
     @Test(priority = 2, description = "Book Search - Brand New condition, A to Z sort, 100-1500 price range")
     public void testBookSearch() {
 
         try {
-            log.info("========================================");
+            
             log.info("Starting Book Search Test");
-            log.info("========================================");
+         
 
             // Read row index 2 (Book row) from CSV
             Map<String, String> data = CSVReaderUtil.getTestData(CSV_PATH, 2);
@@ -232,7 +227,7 @@ public class CarAndBookTest extends BaseTest {
         }
     }
 
-    // ==================== HELPERS ====================
+    
 
     private void saveToCSV(List<Map<String, String>> products, String filePath) throws IOException {
         java.io.File outputFile = new java.io.File(filePath);

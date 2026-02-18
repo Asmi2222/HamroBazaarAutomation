@@ -7,19 +7,13 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * ExtentManager - Creates and manages ExtentReports instance
- * This class sets up the HTML report with configuration
- */
+
 public class ExtentManager {
     
     private static ExtentReports extent;
     private static String reportPath;
     
-    /**
-     * Get or create ExtentReports instance
-     * @return ExtentReports instance
-     */
+    
     public static ExtentReports getInstance() {
         if (extent == null) {
             createInstance();
@@ -27,10 +21,7 @@ public class ExtentManager {
         return extent;
     }
     
-    /**
-     * Create ExtentReports instance with configuration
-     * @return ExtentReports instance
-     */
+    
     private static ExtentReports createInstance() {
         // Create reports directory if not exists
         File reportsDir = new File("reports");
@@ -68,36 +59,31 @@ public class ExtentManager {
         return extent;
     }
     
-    /**
-     * Get the report file path
-     * @return Report file path
-     */
+    
     public static String getReportPath() {
         return reportPath;
     }
     
-    /**
-     * Flush the report (save all data to file)
-     */
+    
     public static void flushReport() {
-        System.out.println("=== Flushing ExtentReport ===");
+        System.out.println("Flushing ExtentReport");
         if (extent != null) {
             extent.flush();
-            System.out.println("✓ ExtentReport flushed successfully");
+            System.out.println("ExtentReport flushed successfully");
             System.out.println("Report should be at: " + reportPath);
             
             // Check if file exists
             if (reportPath != null) {
                 java.io.File reportFile = new java.io.File(reportPath);
                 if (reportFile.exists()) {
-                    System.out.println("✓ Report file confirmed exists: " + reportFile.getAbsolutePath());
+                    System.out.println("Report file confirmed exists: " + reportFile.getAbsolutePath());
                     System.out.println("File size: " + reportFile.length() + " bytes");
                 } else {
-                    System.err.println("✗ WARNING: Report file not found at: " + reportFile.getAbsolutePath());
+                    System.err.println("WARNING: Report file not found at: " + reportFile.getAbsolutePath());
                 }
             }
         } else {
-            System.err.println("✗ WARNING: ExtentReports instance is null!");
+            System.err.println("WARNING: ExtentReports instance is null!");
         }
     }
 }

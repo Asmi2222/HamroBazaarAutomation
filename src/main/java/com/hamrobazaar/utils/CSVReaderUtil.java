@@ -21,13 +21,7 @@ public class CSVReaderUtil {
     
     private static final Logger log = LogManager.getLogger(CSVReaderUtil.class);
     
-    /**
-     * Read CSV file and return list of maps
-     * Each map represents one row with column headers as keys
-     * 
-     * @param filePath Path to CSV file
-     * @return List of maps containing CSV data
-     */
+    
     public static List<Map<String, String>> readCSV(String filePath) {
         List<Map<String, String>> data = new ArrayList<>();
         
@@ -69,13 +63,7 @@ public class CSVReaderUtil {
         return data;
     }
     
-    /**
-     * Get specific test data by row index
-     * 
-     * @param filePath Path to CSV file
-     * @param rowIndex Index of row to retrieve (0-based, excluding header)
-     * @return Map containing row data
-     */
+    
     public static Map<String, String> getTestData(String filePath, int rowIndex) {
         List<Map<String, String>> allData = readCSV(filePath);
         
@@ -87,28 +75,19 @@ public class CSVReaderUtil {
         }
     }
     
-    /**
-     * Get first row of test data (most common use case)
-     * 
-     * @param filePath Path to CSV file
-     * @return Map containing first row data
-     */
+    
     public static Map<String, String> getTestData(String filePath) {
         return getTestData(filePath, 0);
     }
     
-    /**
-     * Print CSV data in readable format (for debugging)
-     * 
-     * @param filePath Path to CSV file
-     */
+    
     public static void printCSVData(String filePath) {
         List<Map<String, String>> data = readCSV(filePath);
         
-        log.info("========== CSV Data ==========");
+        log.info("CSV Data");
         for (int i = 0; i < data.size(); i++) {
             log.info("Row {}: {}", i, data.get(i));
         }
-        log.info("==============================");
+        
     }
 }

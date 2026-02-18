@@ -11,16 +11,12 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * FilterPage - Handles all filter actions on search results page:
- * condition, price range, negotiable, and sort order.
- * Keeps HomePage and SearchResultsPage unchanged.
- */
+
 public class FilterPage extends BasePage {
 
     private static final Logger log = LogManager.getLogger(FilterPage.class);
 
-    // ==================== LOCATORS ====================
+    
 
     // Condition combobox input
     private final By conditionInput       = By.cssSelector("input[name='condition']");
@@ -41,7 +37,7 @@ public class FilterPage extends BasePage {
     private final By applyFilterByClass   = By.cssSelector("button[type='submit'].bg-primary-surface");
     private final By applyFilterGeneric   = By.xpath("//button[@type='submit' and contains(@class,'rounded-lg')]");
 
-    // ==================== DYNAMIC LOCATORS ====================
+    
 
     // Negotiable button built from CSV value (Any / Negotiable / Fixed)
     private By negotiableButton(String value) {
@@ -53,20 +49,14 @@ public class FilterPage extends BasePage {
         return By.xpath("//button[contains(@class,'flex') and contains(@class,'items-center')][.//span[contains(@class,'font-medium') and normalize-space(text())='" + displayText + "']]");
     }
 
-    // ==================== CONSTRUCTOR ====================
+    
 
     public FilterPage(WebDriver driver) {
         super(driver);
         log.info("FilterPage initialized");
     }
 
-    // ==================== ACTIONS ====================
-
-    /**
-     * Set condition filter by typing in the condition combobox and selecting suggestion.
-     * Skips if value is blank or null.
-     * e.g. "Brand New", "Used"
-     */
+    
     public void setCondition(String condition) {
         if (condition == null || condition.trim().isEmpty()) {
             log.info("No condition specified, skipping");
@@ -118,10 +108,7 @@ public class FilterPage extends BasePage {
         }
     }
 
-    /**
-     * Set price range. Skips if both are blank or null.
-     * Values come directly from CSV columns "Pricing from" and "Pricing to"
-     */
+    
     public void setPriceRange(String minPrice, String maxPrice) {
         boolean hasMin = minPrice != null && !minPrice.trim().isEmpty();
         boolean hasMax = maxPrice != null && !maxPrice.trim().isEmpty();
@@ -155,10 +142,7 @@ public class FilterPage extends BasePage {
         }
     }
 
-    /**
-     * Set negotiable filter. Skips if blank or null.
-     * Values: "Any", "Negotiable", "Fixed"
-     */
+    
     public void setNegotiable(String negotiable) {
         if (negotiable == null || negotiable.trim().isEmpty()) {
             log.info("No negotiable filter specified, skipping");
@@ -177,9 +161,7 @@ public class FilterPage extends BasePage {
         }
     }
 
-    /**
-     * Click Apply Filters button
-     */
+    
     public void clickApplyFilters() {
         log.info("Clicking Apply Filters button");
 
@@ -209,19 +191,11 @@ public class FilterPage extends BasePage {
         }
     }
 
-    // ==================== VERIFICATION ====================
-
-    /**
-     * Verify prices sorted HIGH TO LOW
-     * Step 1: collect originalPrices from DOM
-     * Step 2: copy to sortedPrices
-     * Step 3: sort descending
-     * Step 4: compare original vs sorted
-     */
+    
     public boolean verifyPriceSortedHighToLow() {
-        log.info("========================================");
+        
         log.info("PRICE SORT VERIFICATION: HIGH TO LOW");
-        log.info("========================================");
+        
 
         try {
             List<WebElement> priceElements = driver.findElements(
@@ -262,12 +236,12 @@ public class FilterPage extends BasePage {
                     pad(String.valueOf(i + 1), 8),
                     pad("Rs " + originalPrices.get(i), 15),
                     pad("Rs " + sortedPrices.get(i), 18),
-                    match ? "✓" : "✗ MISMATCH");
+                    match ? "MATCH" : " MISMATCH");
             }
 
-            log.info("========================================");
-            log.info(isSorted ? "✓ PASSED - High to Low" : "✗ FAILED - NOT High to Low");
-            log.info("========================================");
+            
+            log.info(isSorted ? " PASSED - High to Low" : " FAILED - NOT High to Low");
+            
             return isSorted;
 
         } catch (Exception e) {
@@ -276,17 +250,11 @@ public class FilterPage extends BasePage {
         }
     }
 
-    /**
-     * Verify titles sorted A TO Z
-     * Step 1: collect originalTitles from DOM
-     * Step 2: copy to sortedTitles
-     * Step 3: Collections.sort ascending
-     * Step 4: compare original vs sorted
-     */
+    
     public boolean verifyTitlesSortedAtoZ() {
-        log.info("========================================");
+        
         log.info("TITLE SORT VERIFICATION: A TO Z");
-        log.info("========================================");
+        
 
         try {
             List<WebElement> titleElements = driver.findElements(
@@ -325,12 +293,12 @@ public class FilterPage extends BasePage {
                     pad(String.valueOf(i + 1), 8),
                     pad(originalTitles.get(i), 35),
                     pad(sortedTitles.get(i), 35),
-                    match ? "✓" : "✗ MISMATCH");
+                    match ? "MATCH" : " MISMATCH");
             }
 
-            log.info("========================================");
-            log.info(isSorted ? "✓ PASSED - A to Z" : "✗ FAILED - NOT A to Z");
-            log.info("========================================");
+            
+            log.info(isSorted ? "PASSED - A to Z" : "FAILED - NOT A to Z");
+         
             return isSorted;
 
         } catch (Exception e) {
@@ -348,13 +316,7 @@ public class FilterPage extends BasePage {
         return String.format("%-" + n + "s", s);
     }
 
-    // ==================== SORT ====================
-
-    /**
-     * Open sort dropdown and select option matching the SortOrder enum.
-     * Uses enum display text to find the button dynamically.
-     * e.g. SortOrder.HIGH_TO_LOW -> clicks "High to Low (Price)"
-     */
+    
     public void applySortOrder(SortOrder sortOrder) {
         log.info("Applying sort order: {}", sortOrder.getDisplayText());
 

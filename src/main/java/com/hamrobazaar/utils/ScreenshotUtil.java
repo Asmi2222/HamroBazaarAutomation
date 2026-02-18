@@ -11,24 +11,16 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * ScreenshotUtil - Utility class to capture screenshots
- * Saves screenshots to the screenshots folder
- */
+
 public class ScreenshotUtil {
     
     private static final Logger log = LogManager.getLogger(ScreenshotUtil.class);
     private static final String SCREENSHOT_DIR = "screenshots/";
     
-    /**
-     * Capture screenshot and save to file
-     * @param driver WebDriver instance
-     * @param testName Name of the test (for filename)
-     * @return Path to the screenshot file
-     */
+   
     public static String captureScreenshot(WebDriver driver, String testName) {
         
-        log.info("=== SCREENSHOT CAPTURE STARTED ===");
+        log.info("SCREENSHOT CAPTURE STARTED");
         log.info("Test name: {}", testName);
         log.info("Driver null? {}", (driver == null));
         
@@ -71,7 +63,7 @@ public class ScreenshotUtil {
             FileUtils.copyFile(source, destination);
             
             log.info("Screenshot captured successfully: {}", filePath);
-            System.out.println("✓ Screenshot saved: " + filePath);
+            System.out.println("Screenshot saved: " + filePath);
             log.info("=== SCREENSHOT CAPTURE COMPLETED ===");
             
             return filePath;
@@ -84,25 +76,17 @@ public class ScreenshotUtil {
         }
     }
     
-    /**
-     * Capture screenshot with default filename
-     * @param driver WebDriver instance
-     * @return Path to the screenshot file
-     */
+   
     public static String captureScreenshot(WebDriver driver) {
         return captureScreenshot(driver, "Screenshot");
     }
     
-    /**
-     * Capture screenshot for failed test (used by TestListener)
-     * @param testName Name of the failed test
-     * @return Path to the screenshot file
-     */
+    
     public static String captureScreenshot(String testName) {
         // This method will be used by ExtentReportListener
         // It will get the driver from DriverManager
         
-        System.out.println("=== captureScreenshot(testName) called ===");
+        System.out.println("captureScreenshot(testName) called ");
         System.out.println("Test name: " + testName);
         
         try {
@@ -134,11 +118,7 @@ public class ScreenshotUtil {
         }
     }
     
-    /**
-     * Delete old screenshots (optional cleanup method)
-     * Deletes screenshots older than specified days
-     * @param days Number of days to keep screenshots
-     */
+    
     public static void cleanupOldScreenshots(int days) {
         try {
             File screenshotDir = new File(SCREENSHOT_DIR);

@@ -16,10 +16,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 
 
-/**
- * ExtentReportListener - TestNG Listener that updates ExtentReport
- * This class listens to TestNG events and logs them to ExtentReport
- */
+
 public class ExtentReportListener implements ITestListener {
     
     // Log4j2 Logger
@@ -33,19 +30,17 @@ public class ExtentReportListener implements ITestListener {
      */
     @Override
     public void onStart(ITestContext context) {
-        log.info("========================================");
+        
         log.info("Test Suite Started: {}", context.getName());
-        log.info("========================================");
+        
     }
     
-    /**
-     * Called when test suite finishes
-     */
+    
     @Override
     public void onFinish(ITestContext context) {
-        log.info("========================================");
+        
         log.info("Test Suite Finished: {}", context.getName());
-        log.info("========================================");
+       
         
         // Flush the report
         ExtentManager.flushReport();
@@ -54,15 +49,13 @@ public class ExtentReportListener implements ITestListener {
         log.info("ExtentReport generated at: {}", reportPath);
         
         // Print to console so user can see it
-        System.out.println("\n========================================");
-        System.out.println("✓ EXTENT REPORT GENERATED");
+        
+        System.out.println("EXTENT REPORT GENERATED");
         System.out.println("Location: " + reportPath);
-        System.out.println("========================================\n");
+        
     }
     
-    /**
-     * Called when a test starts
-     */
+    
     @Override
     public void onTestStart(ITestResult result) {
         // Create a new test in the report
@@ -75,9 +68,7 @@ public class ExtentReportListener implements ITestListener {
         log.info("Test Started: {}", result.getMethod().getMethodName());
     }
     
-    /**
-     * Called when a test passes
-     */
+   
     @Override
     public void onTestSuccess(ITestResult result) {
         // Log test pass
@@ -88,9 +79,7 @@ public class ExtentReportListener implements ITestListener {
         log.info("Test Passed: {}", result.getMethod().getMethodName());
     }
     
-    /**
-     * Called when a test fails
-     */
+   
     @Override
     public void onTestFailure(ITestResult result) {
         // Log test failure
@@ -137,9 +126,7 @@ public class ExtentReportListener implements ITestListener {
         }
     }
     
-    /**
-     * Called when a test is skipped
-     */
+    
     @Override
     public void onTestSkipped(ITestResult result) {
         // Log test skip
@@ -152,10 +139,7 @@ public class ExtentReportListener implements ITestListener {
         log.warn("Test Skipped: {}", result.getMethod().getMethodName());
     }
     
-    /**
-     * Get the current ExtentTest instance
-     * @return Current ExtentTest
-     */
+    
     public static ExtentTest getTest() {
         return extentTest.get();
     }

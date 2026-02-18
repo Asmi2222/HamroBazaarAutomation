@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-17T15:09:07 NPT" name="HamroBazaar Automation Test Suite" finished-at="2026-02-17T15:11:48 NPT" duration-ms="161009">
+  <suite started-at="2026-02-18T14:04:33 NPT" name="HamroBazaar Automation Test Suite" finished-at="2026-02-18T14:07:49 NPT" duration-ms="196623">
     <groups>
     </groups>
-    <test started-at="2026-02-17T15:09:07 NPT" name="Monitor Search Test" finished-at="2026-02-17T15:10:10 NPT" duration-ms="63116">
+    <test started-at="2026-02-18T14:04:33 NPT" name="Monitor Search Test" finished-at="2026-02-18T14:05:38 NPT" duration-ms="65858">
       <class name="com.hamrobazaar.tests.SearchResultsTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-17T15:09:07 NPT" name="setUp" finished-at="2026-02-17T15:09:09 NPT" duration-ms="1907" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-18T14:04:33 NPT" name="setUp" finished-at="2026-02-18T14:04:37 NPT" duration-ms="3933" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCompleteSearchFlowInOneSession()[pri:1, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-17T15:09:09 NPT" name="testCompleteSearchFlowInOneSession" description="Complete Search, Filter, Sort, Extract, and Save - All in One Session" finished-at="2026-02-17T15:10:10 NPT" duration-ms="60655" status="PASS">
+        <test-method signature="testCompleteSearchFlowInOneSession()[pri:1, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-18T14:04:37 NPT" name="testCompleteSearchFlowInOneSession" description="Complete Search, Filter, Sort, Extract, and Save - All in One Session" finished-at="2026-02-18T14:05:38 NPT" duration-ms="61406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompleteSearchFlowInOneSession -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-17T15:10:10 NPT" name="tearDown" finished-at="2026-02-17T15:10:10 NPT" duration-ms="498" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hamrobazaar.tests.SearchResultsTest@22175d4f]" started-at="2026-02-18T14:05:38 NPT" name="tearDown" finished-at="2026-02-18T14:05:38 NPT" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hamrobazaar.tests.SearchResultsTest -->
     </test> <!-- Monitor Search Test -->
-    <test started-at="2026-02-17T15:10:11 NPT" name="Car and Book Search Tests" finished-at="2026-02-17T15:11:48 NPT" duration-ms="97632">
+    <test started-at="2026-02-18T14:05:39 NPT" name="Car and Book Search Tests" finished-at="2026-02-18T14:07:49 NPT" duration-ms="130497">
       <class name="com.hamrobazaar.tests.CarAndBookTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-17T15:10:11 NPT" name="setUp" finished-at="2026-02-17T15:10:12 NPT" duration-ms="1351" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-18T14:05:39 NPT" name="setUp" finished-at="2026-02-18T14:05:40 NPT" duration-ms="1320" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCarSearch()[pri:1, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-17T15:10:12 NPT" name="testCarSearch" description="Car Search - Used condition, High to Low price, 100000-10000000 range" finished-at="2026-02-17T15:10:52 NPT" duration-ms="40104" status="PASS">
+        <test-method signature="testCarSearch()[pri:1, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-18T14:05:40 NPT" name="testCarSearch" description="Car Search - Used condition, High to Low price, 100000-10000000 range" finished-at="2026-02-18T14:06:45 NPT" duration-ms="64681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCarSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-17T15:10:52 NPT" name="tearDown" finished-at="2026-02-17T15:10:53 NPT" duration-ms="450" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-18T14:06:45 NPT" name="tearDown" finished-at="2026-02-18T14:06:45 NPT" duration-ms="389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-17T15:10:53 NPT" name="setUp" finished-at="2026-02-17T15:10:54 NPT" duration-ms="1386" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-18T14:06:45 NPT" name="setUp" finished-at="2026-02-18T14:06:46 NPT" duration-ms="1238" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testBookSearch()[pri:2, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-17T15:10:54 NPT" name="testBookSearch" description="Book Search - Brand New condition, A to Z sort, 100-1500 price range" finished-at="2026-02-17T15:11:48 NPT" duration-ms="53850" status="PASS">
+        <test-method signature="testBookSearch()[pri:2, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-18T14:06:46 NPT" name="testBookSearch" description="Book Search - Brand New condition, A to Z sort, 100-1500 price range" finished-at="2026-02-18T14:07:49 NPT" duration-ms="62395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBookSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-17T15:11:48 NPT" name="tearDown" finished-at="2026-02-17T15:11:48 NPT" duration-ms="488" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hamrobazaar.tests.CarAndBookTest@6759f091]" started-at="2026-02-18T14:07:49 NPT" name="tearDown" finished-at="2026-02-18T14:07:49 NPT" duration-ms="468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
